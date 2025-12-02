@@ -1,8 +1,12 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
 import { Github, Linkedin, Mail, ExternalLink, Code2, Terminal, Database, Briefcase, User, ChevronDown, Monitor, Globe, Server } from 'lucide-react';
 import Link from 'next/link';
+import type { Metadata } from "next";
+
+// --- METADATA (JUDUL WEBSITE) ---
+export const metadata: Metadata = {
+  title: "Aditia Putra | Web Developer",
+};
 
 export default function Home() {
   // --- DATA PENGALAMAN (EXPERIENCE) ---
@@ -65,7 +69,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
         <div className="max-w-6xl mx-auto px-6 h-16 flex justify-between items-center">
           <div className="text-xl font-bold bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
-            Blue<span className="text-slate-200">.dev</span>
+            Aditia<span className="text-slate-200">.dev</span>
           </div>
           <div className="hidden md:flex gap-8 text-sm font-medium text-slate-400">
             <Link href="#home" className="hover:text-cyan-400 transition-colors">Home</Link>
@@ -208,13 +212,13 @@ export default function Home() {
           </p>
           
           <div className="flex justify-center gap-6">
-            <Link href="https://github.com" target="_blank" className="p-4 bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 rounded-full transition-all text-white border border-slate-700 shadow-lg">
+            <Link href="https://github.com/aditiaPutra1212  " target="_blank" className="p-4 bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 rounded-full transition-all text-white border border-slate-700 shadow-lg">
               <Github size={24} />
             </Link>
-            <Link href="https://linkedin.com" target="_blank" className="p-4 bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 rounded-full transition-all text-white border border-slate-700 shadow-lg">
+            <Link href="https://www.linkedin.com/in/aditia-putra/" target="_blank" className="p-4 bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 rounded-full transition-all text-white border border-slate-700 shadow-lg">
               <Linkedin size={24} />
             </Link>
-            <Link href="mailto:email@aditia.com" className="p-4 bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 rounded-full transition-all text-white border border-slate-700 shadow-lg">
+            <Link href="mailto:aditiaputra88890@gmail.com" className="p-4 bg-slate-800 hover:bg-slate-700 hover:text-cyan-400 rounded-full transition-all text-white border border-slate-700 shadow-lg">
               <Mail size={24} />
             </Link>
           </div>
